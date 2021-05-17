@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "../hooks/useForm";
 
-const initialValue = {
+const initialValues = {
   firstName: "",
   lastName: "",
   address: "",
@@ -15,7 +15,7 @@ const initialValue = {
 // and replace the necessary stateful logic from CheckoutForm with the hook
 
 const CheckoutForm = (props) => {
-  const { values, handleChanges, handleSubmit, showSuccessMessage } = useForm(initialValue)
+  const { values, handleChanges, handleSubmit, showSuccessMessage } = useForm(initialValues)
 
   return (
     <>
